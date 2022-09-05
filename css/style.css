@@ -599,7 +599,7 @@ textarea {
 .navbar-nav{
   flex-direction: row;
 }
-@media screen and (max-width: 376px){
+@media screen and (max-width: 470px){
   .carousel-item{
     height: 210px;
   }

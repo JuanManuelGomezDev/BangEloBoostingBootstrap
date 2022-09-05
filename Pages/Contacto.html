@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,60 +10,74 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="row">
-                <div class="col-12 col-lg-12">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-                        <div class="container-fluid">
-                          <a class="navbar-brand text-white" href="../index.html">Inicio</a>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                              <li class="nav-item ">
-                                <a class="nav-link text-white"  href="./CompraBoost.html">Compra Boost</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link text-white" href="./AcercaDe.html">Acerca De</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Contacto</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link text-white" href="./Ingresar.html">Ingresa</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </nav>
-                </div>
+      <header>
+        <div class="row">
+            <div class="col-12 col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <div class="container-fluid mb-4">
+                     
+                    
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item"> 
+                          <a class="nav-link" href="../index.html">Inicio</a></li>
+
+                          <li class="nav-item">
+                            <a class="nav-link "  href="./CompraBoost.html">Compra boost</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="./AcercaDe.html">Acerca De</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="#">Contacto</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="./Ingresar.html">Ingresa</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
             </div>
-        </header>
+        </div>
+    </header>
         <main>
           <div class="row mt-4 fondocontacto">
-            <div class="col-12 col-lg-12" style="border: 2px solid black;">
-
-            <h2 class="pt-2">Contacta con BangEloboost</h2>
-
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Escribe tu nombre o Apodo</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Juan Manuel Gonzalez">
+            <div class="col-12 col-lg-12">
+ 
+           
+            <form action="#" method="post" id="contact_form" class="formcontact">
+              <div class="name">
+                <label for="name" class="nombre"></label>
+                <input type="text" placeholder="Nombre o Apodo" name="name" id="name_input" required>
               </div>
-
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Escribe tu correo electronico</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="JuanManuelGonzalez123@ejemplo.com">
+              <div class="email">
+                <label for="email"></label>
+                <input type="email" placeholder="Email" name="email" id="email_input" required>
               </div>
-
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+              <div class="telephone">
+                <label for="name"></label>
+                <input type="text" placeholder="Numero" name="telephone" id="telephone_input" required>
               </div>
-              <div class="d-flex justify-content-center mb-3">
-                <button type="button" class="btn btn-dark">Enviar</button>
-               </div>
-
+              <div class="subject">
+                <label for="subject"></label>
+                <select placeholder="Subject line" name="subject" id="subject_input" required>
+                  <option disabled hidden selected>Me Contacto por</option>
+                  <option>Mas informacion acerca del servicio</option>
+                  <option>Por problemas con el servicio</option>
+                  <option>Otros...</option>
+                </select>
+              </div>
+              <div class="message">
+                <label for="message"></label>
+                <textarea name="message" placeholder="Mensaje..." id="message_input" cols="30" rows="5" required></textarea>
+              </div>
+              <div class="submit">
+                <input type="submit" value="Enviar Mensaje" id="form_button" />
+              </div>
+            </form>
+          </div>
+           </div>
             </div>
            </div>
         </main>

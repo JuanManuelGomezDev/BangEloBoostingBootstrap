@@ -374,6 +374,7 @@ textarea {
     padding: 15px 25px;
     
   }
+
 }
 
 @media screen and (max-width: 420px) {
@@ -592,3 +593,79 @@ textarea {
     background-image: linear-gradient(to bottom, #653882, #5f347b, #593073, #532d6c, #4d2965);
     color: white;
  }
+ .collapse:not(.show){
+  display: flex;
+}
+.navbar-nav{
+  flex-direction: row;
+}
+@media screen and (max-width: 376px){
+  .carousel-item{
+    height: 210px;
+  }
+  .nav-item{
+    padding: 0; 
+    padding-left: 0; 
+    padding-top: 0;
+  }
+  .nav-link{ padding: 0;
+    margin: 0px 6px;
+    font-size: 13px;}
+  .nav a{
+    
+    margin: 0px 6px;
+    font-size: 13px;
+  }
+  .container-fluid{
+    padding-right:0;
+    padding-left: 0;
+  }
+  .cartas{
+    display: flex;
+    flex-direction: column;
+  }
+  #contenedorCartas{
+    display: flex;
+    flex-direction: column;
+  }
+  .mb-5 {
+    margin-bottom: 3.5rem!important;
+  }
+  .card{margin: 0;
+  margin-bottom: 1rem;}
+  .compraboost2{
+    width: 95%;
+    margin: 3rem auto;
+  }
+  .img-fluid img{
+    max-width: 50%;
+    margin: auto;
+    padding: 0.5rem;
+    height: auto;
+  }
+  .cardacerca{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .flip-container{
+    margin-top: 1rem;
+  }
+  #contact_form{
+    
+    margin: 0;
+  }
+  .pagContacto{
+    margin-bottom: 3rem;
+  }
+  .fondocontacto{     --bs-gutter-x: 0rem; 
+  }
+  .name{width: 52%;}
+  .form3{
+    width: 100%;
+  }
+}
+
+
